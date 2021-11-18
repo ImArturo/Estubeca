@@ -74,7 +74,7 @@ body {
     cursor: pointer;
 }
 .nav__button:hover {
-    color:rgb(235, 66, 15)
+    color:rgb(253, 149, 80)
 }
 /*lo que hizo miguel*/
 .contenedor {
@@ -98,7 +98,6 @@ body {
 header {
     width: 100%;
     height: 600px;
-    background: #4e7abc;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(29, 68%, 59%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -140,6 +139,7 @@ header .textos-header{
 /* About us */
 
 main .sobre-nosotros{
+    
     padding: 30px 0 60px 0;
 }
 .contenedor-sobre-nosotros{
@@ -148,40 +148,28 @@ main .sobre-nosotros{
 }
 
 .imagen-about-us{
-    width: 48%;
-}
-
-.sobre-nosotros .contenido-textos{
-    width: 48%;
+    width: 50%;
+    margin-bottom: 40px;
 }
 
 .contenido-textos h3{
-    margin-bottom: 5px;
 
-}
-
-.contenido-textos h3 span{
-    background: #e2a36c;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
+    padding: 30px 30px 0px 100px;
+    margin-bottom: 10px;
+    margin-left: 30 px;
 }
 
 .contenido-textos p{
-    padding: 0px 0px 30px 15px;
-    font-weight: 300;
+    padding: 30px 35px 40px 50px;
+    font-weight: 400;
     text-align: justify;
+    margin-right: 30px;
+}
+.contenido-textos button{
+    margin: 0px 0px 0px 150px;
+    background-color: #F6E0C2;
 }
 
-.contenido-textos p > ul > li{
-    margin-left: 100px;
-}
 
 /* Galeria */
 
@@ -225,8 +213,7 @@ main .sobre-nosotros{
 /*  Our team */
 
 .about-services{
-    background: #f2f2f2;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -253,6 +240,43 @@ main .sobre-nosotros{
     font-weight: 300;
     text-align: justify;
 }
+
+/* Clients */
+
+.cards{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #e2a36c;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+    
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
 
 /* footer */
 
