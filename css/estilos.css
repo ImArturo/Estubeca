@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Be Vietnam', sans-serif;
 }
+
 /*lo que hizo miguel*/
 
 .container {
@@ -25,7 +28,7 @@ body {
 }
 .nav__logo__img {
     display: block;
-    width: 9%;
+    width: 10%;
     cursor: pointer;
     padding-left: 2rem;
 }
@@ -42,15 +45,14 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 1rem;
-    margin-left: 40em;
+    margin-left: 45em;
     
 }
 .nav__links__link{
     display: block;
     text-decoration: none;
     color: #000;
-    font-family: 'Be Vietnam Light', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     font-size: 1rem;
     padding-top: 1.5rem;
     transition: all 300ms;
@@ -64,9 +66,9 @@ body {
     width: 10rem;
     height: 3em;
     font-family: 'Be Vietnam', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
     margin: 1.5rem 0;
-    margin-right: 4rem;
+    margin-top: 2em;
+    margin-right: 3rem;
     border-radius: 2rem;
     font-size: 1rem;
     padding: 0rem;
@@ -74,7 +76,7 @@ body {
     cursor: pointer;
 }
 .nav__button:hover {
-    color:rgb(253, 149, 80)
+    color:rgb(235, 153, 98)
 }
 /*lo que hizo miguel*/
 .contenedor {
@@ -87,10 +89,12 @@ body {
 
 .titulo {
     color: #000000;
-    font-size: 30px;
-    text-align: center;
     margin-bottom: 60px;
     font-family: 'Concert One';
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 /* Header */
@@ -99,7 +103,7 @@ header {
     width: 100%;
     height: 600px;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(29, 68%, 59%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background: -webkit-linear-gradient(to right, hsla(29, 79%, 74%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(36, 87%, 65%, 0.459), hsla(32, 63%, 62%, 0.664)), url(../img/portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -140,7 +144,7 @@ header .textos-header{
 
 main .sobre-nosotros{
     
-    padding: 30px 0 60px 0;
+    padding: 60px 0 60px 0;
 }
 .contenedor-sobre-nosotros{
     display: flex;
@@ -156,7 +160,7 @@ main .sobre-nosotros{
 
     padding: 30px 30px 0px 100px;
     margin-bottom: 10px;
-    margin-left: 30 px;
+    margin-left: 30px;
 }
 
 .contenido-textos p{
@@ -170,52 +174,7 @@ main .sobre-nosotros{
     background-color: #F6E0C2;
 }
 
-
-/* Galeria */
-
-
-.galeria-port{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-port{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.imagen-port > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-    color: #fff;
-}
-
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
-}
-
-
 /*  Our team */
-
-.about-services{
-    padding-bottom: 50px;
-}
-
 
 .servicio-cont{
     display:flex;
@@ -250,14 +209,14 @@ main .sobre-nosotros{
 }
 
 .cards .card{
-    background: #e2a36c;
+    background: #f0c8a4;
     display: flex;
     width: 46%;
     height: 200px;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #ad855f;
 }
 
 .cards .card img{
@@ -268,7 +227,7 @@ main .sobre-nosotros{
 
 .cards .card > .contenido-texto-card{
     width: 60%;
-    color: #fff;
+    color: rgb(32, 20, 9);
     
 }
 
@@ -276,8 +235,113 @@ main .sobre-nosotros{
     font-weight: 300;
     padding-top: 5px;
 }
+/* Cards */
 
+.content-cuadros{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: row-wrap;
+}
 
+.cuadro{
+    width: 20%;
+    text-align: center;
+    height: 400px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(0.96);
+    transition: transform 0.6s;
+}
+
+.cuadro:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.cuadro h3{
+    margin: 10px 0 20px 0;
+    color: #8a545b;
+    font-size: 20px;
+}
+.cuadro img{
+    width: 50%;
+    margin-top: 30px;
+}
+.cuadro p{
+    font-weight: 40;
+    font-size: 15px;
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #fdb77d 0%, #fad0c4 99%, #fad0c4 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* Contacto */
+#contacto{
+    background: #F6E0C2;
+}
+#contacto .contenedor{
+    margin-top: 0px;
+    padding-top: 30px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.input{
+    background:rgb(255, 255, 255);
+    border: 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 0px;
+    padding: 20px 30px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 17px;
+}
+
+.input::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+input[type="text"], input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    border: 0px;
+    margin-top: 30px;
+    background-color: #f0c8a4;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(248, 192, 127);
+}
 /* footer */
 
 footer{
@@ -310,27 +374,90 @@ footer{
 .content-foo p{
     color: #ccc;
 }
-
+@media screen and (max-width:1400px){
+    .nav__links{
+        width: 25%;
+        margin-top: 1rem;
+        margin-left: 20em;
+        
+    }
+    
+}
 
 @media screen and (max-width:900px){
-    header{
-        background-position: center;
+    .nav{
+         justify-content: start;
+     }
+    .nav__logo__img{
+        width: 16%;
+        margin-top: 0.5em;
     }
-
-    .contenedor-sobre-nosotros{
+    .nav__links{
+        width: 40%;
+        margin-top: 1rem;
+        margin-left: 5em;
+        
+    }
+    .nav__button{
+        margin-left: 3em;
+    }
+    .contenedor-sobre-nosotros {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-    .sobre-nosotros .contenido-textos{
+    .contenedor-sobre-nosotros .contenido-textos{
         width: 90%;
+    }
+    .contenido-textos h3{
+
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .contenido-textos p{
+        padding: 40px 0px;
+        margin: 0px;
+    }
+    .contenido-textos button{
+        margin: 0px;
     }
 
     .imagen-about-us{
-        width: 90%;
+        width: 80%;
     }
+    .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    }
+    .cards .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 30px 0px;
+    }
+    .cards .card img{
+        margin-top: 1em;
+        width: 35%;
+        height:1%;
+    }
+    .cards .card > .contenido-texto-card{
+        width: 70%;
+        font-size: 100%;
+        
+    }
+    
+    .cards .card > .contenido-texto-card p {
+        padding-bottom: 40px;
+        text-align: justify;
+    }
+  
     /* servicios */
 
     .servicio-cont{
@@ -339,29 +466,49 @@ footer{
     }
 
     .servicio-ind{
-        width: 100%;
+        width: 90%;
         text-align: center;
     }
-
+   
     .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
         margin-bottom: 60px;
     }
 
     .servicio-ind img{
+        width: 70%;
+    }
+     /* Programas */
+
+     .cuadro{
         width: 90%;
+        margin-bottom: 20px;
     }
 }
 
-@media screen and (max-width:500px){
-    nav{
+@media screen and (max-width:400px){
+    header {
+        display: flex;
+    }
+    .nav {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         text-align: center;
-        padding: 30px 0 0 0;
+    }
+    .nav__logo__img {
+        width: 25%;
+        padding: 0px;
     }
 
-    nav > a{
-        margin-right: 5px;
+    .nav__links{
+        width: 15%;
+        margin: 0rem;
+      
     }
-
+    .nav .nav__button{
+        margin-left: 75px;
+    }
     .textos-header h1{
         font-size: 35px;
     }
@@ -369,16 +516,22 @@ footer{
     .textos-header h2{
         font-size: 20px;
     }
-
-  
-
     /* Footer */
 
     .contenedor-footer{
         flex-direction: column;
         border: none;
     }
-
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card img{
+        margin-top: 1em;
+        width: 35%;
+    }
+    .cards .card .contenido-texto-card{
+        font-size: 14px;
+    }
     .content-foo{
         margin-bottom: 20px;
         text-align: center;
@@ -396,5 +549,9 @@ footer{
 
     .titulo-final{
         font-size: 20px;
+    }
+
+    .cuadro{
+        height: 380px;
     }
 }
